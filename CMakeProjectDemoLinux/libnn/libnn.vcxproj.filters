@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="nn\factory.h" />
+    <ClInclude Include="nn\nn.h" />
+    <ClInclude Include="nn\network_impl\cnn.h">
+      <Filter>nn\network_impl</Filter>
+    </ClInclude>
+    <ClInclude Include="nn\network_impl\dnn.h">
+      <Filter>nn\network_impl</Filter>
+    </ClInclude>
+    <ClInclude Include="nn\network_impl\rnn.h">
+      <Filter>nn\network_impl</Filter>
+    </ClInclude>
+    <ClInclude Include="nn\factory_impl\factory_impl.h">
+      <Filter>nn\factory_impl</Filter>
+    </ClInclude>
+    <ClInclude Include="nn_api\nn_api.h">
+      <Filter>nn_api</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="nn">
+      <UniqueIdentifier>{c6e123e9-fb4f-43dc-8ceb-f6a8fafa1e8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nn\factory_impl">
+      <UniqueIdentifier>{95f1eb55-f356-4f0a-9383-54be2ce6772a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nn\network_impl">
+      <UniqueIdentifier>{d54a92a3-1cba-40ad-aa6e-e2bd97af2dcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nn_api">
+      <UniqueIdentifier>{b88eb8e1-d0b4-4142-9312-9fa32fa5c207}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nn\factory_impl\factory_impl.cpp">
+      <Filter>nn\factory_impl</Filter>
+    </ClCompile>
+    <ClCompile Include="nn_api\nn_api.cpp">
+      <Filter>nn_api</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
