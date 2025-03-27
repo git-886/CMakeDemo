@@ -1,0 +1,11 @@
+# 忽略 Visual Studio 相关目录
+.vs/
+
+# 忽略编译生成的可执行文件
+*.out
+
+# 忽略构建目录
+build/  
+
+# 忽略 CMake 预设文件
+CMakePresets.json
