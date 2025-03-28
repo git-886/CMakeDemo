@@ -2,6 +2,7 @@
 set (NN_SRC_FILTER "./libnn/*.h" "./libnn/*.cpp")
 file (GLOB_RECURSE NN_SRC ${NN_SRC_FILTER})
 add_library (nn SHARED ${NN_SRC})
+target_compile_definitions (nn PRIVATE -D NN_APIEXPORT)
 
 
 

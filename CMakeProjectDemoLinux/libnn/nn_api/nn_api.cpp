@@ -8,7 +8,7 @@
 
 static nn_i* g_nn = nullptr;
 
-_declspec(dllexport) int __stdcall InitNetwork(const char* which)
+NN_API NN_STATUS NN_CALL InitNetwork(const char* which)
 {
     factory_i* fct = new factory_impl();
     g_nn = fct->create_nn("dnn");
@@ -16,13 +16,13 @@ _declspec(dllexport) int __stdcall InitNetwork(const char* which)
     return 0;
 }
 
-_declspec(dllexport) int __stdcall FiniNetwork()
+NN_API NN_STATUS NN_CALL FiniNetwork()
 {
     delete g_nn; g_nn = nullptr;
     return 0;
 }
 
-_declspec(dllexport) int __stdcall TrainNetwork(const char* data, size_t size)
+NN_API NN_STATUS NN_CALL TrainNetwork(const char* data, size_t size)
 {
     if (!g_nn)
         return -1;
@@ -34,7 +34,7 @@ _declspec(dllexport) int __stdcall TrainNetwork(const char* data, size_t size)
     return ret;
 }
 
-_declspec(dllexport) int __stdcall InferNetwork(const char* model, size_t size)
+NN_API NN_STATUS NN_CALL InferNetwork(const char* model, size_t size)
 {
     if (!g_nn)
         return -1;
