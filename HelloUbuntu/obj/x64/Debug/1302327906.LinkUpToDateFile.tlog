@@ -1,0 +1,1 @@
+cd /home/ubuntu/projects/HelloUbuntu/; g++ -o "/home/ubuntu/projects/HelloUbuntu/bin/x64/Debug/HelloUbuntu.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/ubuntu/projects/HelloUbuntu/obj/x64/Debug/main.o
