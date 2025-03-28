@@ -4,6 +4,7 @@
 
 #include <string>
 #include <iostream>
+#include <cstdlib>
 
 class dnn : public nn_i
 {

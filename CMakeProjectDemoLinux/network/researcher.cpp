@@ -1,8 +1,8 @@
 #include "nn/nn.h"
 
 #include "nn/factory.h"
-#include "nn_api.h"
-
+#include "nn_api/nn_api.h"
+#include <cstring>
 #include <iostream>
 
 int main()
